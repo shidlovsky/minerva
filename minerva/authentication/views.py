@@ -68,7 +68,6 @@ def register(request):
 			{'user_form': user_form, 'profile_form': profile_form},
 			context)	
 
-@login_required
 def user_logout(request):
 	logout(request)
 	return HttpResponseRedirect('/')

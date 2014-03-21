@@ -1,0 +1,44 @@
+As a student
+I want to see the fastest way to reduce my energy consumption
+So that I can survive
+
+As a GP activist
+I want to see the greenest options
+So that I can make the most impact
+
+As a home owner
+I want to see the biggest long-term gains I can get
+So that I benefit the most in the long run
+
+As a person
+I want to get recommendations based on my current consumption
+So that I learn relevant things I did not think about
+
+As a user
+I want to specify what I have done
+So that I can keep track of the overall progress
+
+As a user
+I want to keep track of the changes that I have done
+So that I feel good and I am inclined to continue doing them
+
+As a user
+I want to get rewarded for the progress
+So that I am motivated to continue
+
+As a user
+I want to see the overall statistics for the greeniness in Glasgow
+So that I can rank myself in comparisons to others
+
+As a user
+I want to see the change in Glasgow overtime
+So that I can claim I am a part of it
+
+As a user
+I want to share my achievements with friends
+So that I can encourage them to join in for the good cause
+
+As a user
+I want to have my account
+So that I can save my data and track progress
+

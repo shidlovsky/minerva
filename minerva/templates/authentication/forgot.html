@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+    Hello. My name is Forgot.
+
+    <form id="login_form" method="post" action="/auth/forgot/">
+        {% csrf_token %}
+
+		{% if success %}
+			<div>E-mail was sent</div>
+        {% else %}
+        	{% if error %}
+        		<div>The provided username is not registered</div>
+        		Username: <input type="text" name="username" value="{{username}}" size="50" />
+        	{% else %}
+        		Username: <input type="text" name="username" value="" size="50" />
+        	{% endif %}
+        	<input type="submit" value="Submit" />
+        {% endif %}
+        <br />
+
+        
+    </form>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block title %}Project Title{% endblock %}</title>
+
+		<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+		<link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+
+		<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+		
+		<script type="text/javascript" src="{% static 'js/jquery-2.1.0.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>        
+    </head>
+
+    <body>
+        <div>
+            {% block body_block %}Body block{% endblock %}
+        </div>
+
+
+	    Here are some links:
+	    <h3>App</h3>
+	    <ul>
+	    	<li><a href="/">Index page</a></li>
+	    </ul>
+
+	    <h3>Authentication</h3>
+	    <ul>
+	    	<li><a href="/auth/login">Login page</a></li>
+	    	<li><a href="/auth/register">Register page</a></li>
+	    	<li><a href="/auth/logout">Logout page</a></li>
+	    	<li><a href="/auth/password/reset">Forgot page</a></li>
+	    </ul>
+
+	    <h3>Administration</h3>
+	    <ul>
+	    	<li><a href="/admin">Admin page</a></li>
+	    </ul>	    
+
+    </body>
+</html>

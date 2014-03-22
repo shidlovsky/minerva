@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
 			alert = builder.create();
 			alert.show();
 		} else {
-			webView.loadUrl("http://www.google.com");
+			webView.loadUrl("http://elxnis.pythonanywhere.com/");
 		}
 	}
 

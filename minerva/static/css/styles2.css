@@ -111,8 +111,8 @@ div > .choice-btn:first-child {
 }
 
 /* big icons                                           */
-.appl-btn { background-image: url(static/images/icons.png); }
-#appl-list  button { background-image: url(static/images/icons-sm.png); }
+.appl-btn { background-image: url(../images/icons.png); }
+#appl-list  button { background-image: url(../images/icons-sm.png); }
 .ico-light-bulb { background-position: 0px 0px; }
 .ico-light-bulb-sm { background-position: 0px 0px; }
 .ico-boiler { background-position: 400px 0px; }
@@ -130,10 +130,10 @@ div > .choice-btn:first-child {
 #personal-info div span {
 	display: inline-block;
 	width: 40px; height: 40px;
-	background-image: url(static/images/bad-heart.png);
+	background-image: url(../images/bad-heart.png);
 }
 #personal-info div span.green {
-	background-image: url(static/images/green-heart.png);
+	background-image: url(../images/green-heart.png);
 }
 #cansave {
 	color: #088802;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minerva</title>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!--[if lt IE 9]><script src="html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+<div id="page">
+
+<section id="personal-info">
+	<button class="save-btn">Save!</button>
+	<p>Estimated cost: <strong id="cost">£57.56</strong> pm</p>
+	<p>Saved so far: <strong id="saved">£0.00</strong> pm</p>
+	<p>Can still save: <strong id="cansave">£13.47</strong> pm</p>
+	<div>Green'o'meter: <span class="green"></span><span class="green"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</section>
+
+<section id="appl-list">
+	<ul>
+		<li>
+			<button class="selected ico-light-bulb-sm">
+				<div class="nr">18</div>
+			</button>
+			<div>
+				<div class="meter"><div class="used" style="width: 49%">&nbsp;</div>&nbsp;</div>
+				<aside>-56%</aside>
+				<p>49% (£28.20 pm)</p>
+				<address>Light bulb (Vague)</address>
+			</div>
+		</li>
+		<li>
+			<button class="selected ico-boiler-sm">
+				<div class="nr">1</div>
+			</button>
+			<div>
+				<div class="meter"><div class="used" style="width: 26%">&nbsp;</div>&nbsp;</div>
+				<aside>-3%</aside>
+				<p>26% (£14.97 pm)</p>
+				<address>Boiler (Detailed)</address>
+			</div>
+		</li>
+		<li>
+			<button class="selected ico-tv-set-sm">
+				<div class="nr">2</div>
+			</button>
+			<div>
+				<div class="meter"><div class="used" style="width: 15%">&nbsp;</div>&nbsp;</div>
+				<aside>-12%</aside>
+				<p>15% (£8.46 pm)</p>
+				<address>TV set (Vague)</address>
+			</div>
+		</li>
+	</ul>
+</section>
+
+<section>
+	<div>
+		<button class="choice-btn" onclick="window.location='info.html'">Edit profile</button>
+		<button class="choice-btn selected">Achievement</button>
+	</div>
+</section>
+
+</div>
+
+</body>
+</html>

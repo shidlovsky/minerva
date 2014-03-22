@@ -15,4 +15,3 @@ class UserProfileForm(forms.ModelForm):
 		model = UserProfile
 		# fields = ('birth_date',)
 		fields = ()
-

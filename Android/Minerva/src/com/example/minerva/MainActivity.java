@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 
 		setContentView(R.layout.activity_main);
 		webView = (WebView) findViewById(R.id.webView1);
-		webView.setWebViewClient(new WebViewClient());
+		webView.setWebViewClient(new MyWebViewClient());
 		webView.getSettings().setJavaScriptEnabled(true);
 
 		builder = new Builder(this);
@@ -78,6 +78,30 @@ public class MainActivity extends Activity {
 
 		}
 		return super.onKeyDown(keyCode, event);
+	}
+
+	private class MyWebViewClient extends WebViewClient {
+
+		@Override
+		public boolean shouldOverrideUrlLoading(WebView view, String url) {
+			if (checkConnection()) {
+				System.out.println(checkConnection());
+				view.loadUrl(url);
+			} else {
+				alert = builder.create();
+				alert.show();
+			}
+			return true;
+		}
+
+		@Override
+		public void onReceivedError(WebView view, int errorCode,
+				String description, String failingUrl) {
+			webView.loadUrl("file:///android_asset/myerrorpage.html");
+			alert = builder.create();
+			alert.show();
+			webView.goBack();
+		}
 	}
 
 }

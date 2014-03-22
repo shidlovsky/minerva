@@ -10,7 +10,7 @@ def index(request):
 	context = RequestContext(request)
 	return render_to_response('index.html', {}, context)
 
-@login_required
+# @login_required
 def info(request):
 	context = RequestContext(request)
 	return render_to_response('info.html', {}, context)

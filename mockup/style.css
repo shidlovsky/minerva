@@ -1,0 +1,198 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	font: 100%;
+	font-family: 'Open Sans Condensed', Frutiger, Verdana, sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+#page {
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	max-width: 720px;
+	box-shadow: 0 0 10px #ccc;
+}
+
+#page > header {
+	padding: 0 20px 5px 20px;
+	color: white;
+	background-color: #088802;
+}
+#page > header h1 {
+	font-weight: normal;
+}
+
+section {
+	padding: 20px 20px;
+	border-bottom: 1px solid #877f7f;
+}
+/*#flat {
+	border-bottom: 1px solid #877f7f;
+}*/
+section h1 {
+	font-size: 28pt;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+button {
+	display: inline-block;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #877f7f;
+	text-align: center;
+	font-size: 36pt;
+	font-weight: bold;
+	color: white;
+	height: 72px;
+	border: 0;
+	margin-left: 20px;
+	cursor: pointer;
+	position: relative;
+}
+button:hover { background-color: #978f8f; }
+button:active { background-color: #a79f9f; }
+div > button:first-child {
+	margin-left: 10px;
+}
+.selected { background-color: #2f54dd; }
+.selected:hover { background-color: #3f64ed; }
+.selected:active { background-color: #4f74fd; }
+.flat-btn {
+	width: 30%;
+}
+.appl-btn {
+	width: 200px;
+	height: 200px;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+.appl-btn:nth-child(3n+1) {
+	margin-left: 10px;
+}
+button .nr {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+.appl-btn span {
+	position: absolute;
+	bottom: 5px;
+	left: 0; right: 0;
+	font-size: 30pt;
+	font-weight: normal;
+	text-transform: none;
+}
+.choice-btn {
+	width: 316px;
+}
+div > .choice-btn:first-child {
+	margin-left: 10px;
+}
+
+#flat select {
+	display: inline-block;
+	vertical-align: middle;
+	height: 72px;
+	margin-left: 20px;
+	width: 30%;
+	font-size: 36pt;
+	cursor: pointer;
+}
+#appliances {
+	padding-bottom: 0px;
+}
+
+/* big icons                                           */
+.appl-btn { background-image: url(static/images/icons.png); }
+#appl-list  button { background-image: url(static/images/icons-sm.png); }
+.ico-light-bulb { background-position: 0px 0px; }
+.ico-light-bulb-sm { background-position: 0px 0px; }
+.ico-boiler { background-position: 400px 0px; }
+.ico-boiler-sm { background-position: 300px 0px; }
+.ico-tv-set { background-position: 200px 0px; }
+.ico-tv-set-sm { background-position: 150px 0px; }
+
+/* --------------------------------------------------- */
+#personal-info p {
+	font-size: 36pt;
+}
+#personal-info div {
+	font-size: 28pt;
+}
+#personal-info div span {
+	display: inline-block;
+	width: 40px; height: 40px;
+	background-image: url(static/images/bad-heart.png);
+}
+#personal-info div span.green {
+	background-image: url(static/images/green-heart.png);
+}
+#cansave {
+	color: #088802;
+}
+
+.save-btn {
+	float: right;
+	width: 160px; height: 160px;
+	background-color: #088802;
+	margin-top: 15px;
+}
+.save-btn:hover { background-color: #189812; }
+.save-btn:active { background-color: #28a822; }
+
+#appl-list li {
+	list-style: none;
+	height: 150px;
+	margin-bottom: 15px;
+}
+#appl-list li:last-child {
+	margin-bottom: 0;
+}
+
+#appl-list li button {
+	width: 150px; height: 150px;
+	margin: 0;
+	float: left;
+}
+#appl-list li button .nr {
+	font-size: 26pt;
+	left: 10px;
+	top: 8px;
+}
+
+#appl-list li > div {
+	margin-left: 165px;
+}
+.meter { 
+	background-color: #877f7f;
+	position: relative;
+	height: 30px;
+}
+.used { 
+	background-color: #c60505;
+	position: relative;
+	height: 30px;
+}
+#appl-list li > div aside {
+	float: right;
+	font-size: 42pt;
+	color: #088802;
+	font-weight: bold;
+}
+#appl-list li > div p {
+	font-size: 30pt;
+	font-weight: bold;
+}
+#appl-list li > div address {
+	font-size: 30pt;
+	margin-top: 15px;
+	font-style: normal;
+}

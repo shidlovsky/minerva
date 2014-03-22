@@ -5,7 +5,7 @@ from django.http import HttpResponse
 import json
 from app.models import *
 
-@login_required
+# @login_required
 def index(request):
 	context = RequestContext(request)
 	return render_to_response('index.html', {}, context)

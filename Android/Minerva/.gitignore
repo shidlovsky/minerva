@@ -5,7 +5,7 @@
 *.class
 
 # generated files
-bin/
+bin/*
 !bin/*.apk
 gen/
 

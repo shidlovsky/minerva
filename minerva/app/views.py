@@ -11,9 +11,9 @@ def index(request):
 	return render_to_response('index.html', {}, context)
 
 @login_required
-def view1(request):
+def info(request):
 	context = RequestContext(request)
-	return render_to_response('view1.html', {}, context)
+	return render_to_response('info.html', {}, context)
 
 @login_required
 def view2(request):

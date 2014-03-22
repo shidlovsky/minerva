@@ -6,7 +6,7 @@
 
 # generated files
 bin/
-!bin/Minerva.apk
+!bin/*.apk
 gen/
 
 # Local configuration file (sdk path, etc)

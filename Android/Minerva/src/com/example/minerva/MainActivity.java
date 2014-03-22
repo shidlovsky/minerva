@@ -12,6 +12,7 @@ import android.view.KeyEvent;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.WebSettings.ZoomDensity;
 
 public class MainActivity extends Activity {
 

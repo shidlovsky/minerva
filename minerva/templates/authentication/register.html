@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load apptags %}
+
 {% block navigation_block %}{% endblock %} <!-- empty -->
 
 {% block body_block %}
@@ -7,7 +9,19 @@
         {% csrf_token %}
         <h2 class="form-register-heading">Register</h2>
 
-        {{ user_form.as_p }}
+        <div>
+        {{ user_form.username|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Username\"}"}}
+		{{ user_form.errors.username }}
+        </div>
+        <div>
+        {{ user_form.email|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Email\", \"type\": \"email\"}"}}
+        {{ user_form.errors.email }}
+        </div>
+        <div>
+        {{ user_form.password|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Password\"}"}}
+        {{ user_form.errors.password }}
+		</div>
+
         {{ profile_form.as_p }}
 
 

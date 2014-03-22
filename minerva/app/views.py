@@ -5,15 +5,15 @@ from django.http import HttpResponse
 import json
 from app.models import *
 
-@login_required
+# @login_required
 def index(request):
 	context = RequestContext(request)
 	return render_to_response('index.html', {}, context)
 
-@login_required
-def view1(request):
+# @login_required
+def info(request):
 	context = RequestContext(request)
-	return render_to_response('view1.html', {}, context)
+	return render_to_response('info.html', {}, context)
 
 @login_required
 def view2(request):

@@ -97,7 +97,7 @@ public class MainActivity extends Activity {
 		@Override
 		public void onReceivedError(WebView view, int errorCode,
 				String description, String failingUrl) {
-			webView.loadUrl("file:///android_asset/myerrorpage.html");
+			webView.loadUrl("about:blank");
 			alert = builder.create();
 			alert.show();
 			webView.goBack();

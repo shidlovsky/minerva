@@ -9,6 +9,11 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^auth/', include('authentication.urls')),
+
     url(r'^$', 'minerva.views.index', name='index'),
-    url(r'^auth/', include('authentication.urls')),    
+    url(r'^view1/$', 'minerva.views.view1', name='view1'),
+    url(r'^view2/$', 'minerva.views.view2', name='view2'),
+    url(r'^view3/$', 'minerva.views.view3', name='view3'),
+    
 )

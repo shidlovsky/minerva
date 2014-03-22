@@ -1,22 +1,22 @@
 {% extends 'base.html' %}
 
+{% block navigation_block %}{% endblock %} <!-- empty -->
+
 {% block body_block %}
-    Hello. My name is Login.
-
-    <form id="login_form" method="post" action="/auth/login/">
+    <form id="login_form" class="form-signin" role="form" method="post" action="/auth/login/">
         {% csrf_token %}
-
+        <h2 class="form-signin-heading">Please sign in</h2>
         {% if error %}
-        	<div>Username or Password is wrong</div>
-        	Username: <input type="text" name="username" value="{{username}}" size="50" />
+            <div>Username or Password is wrong</div>
+            <input class="form-control" type="text" name="username" placeholder="Username" value="{{username}}"/>
         {% else %}
-        	Username: <input type="text" name="username" value="" size="50" />
+            <input class="form-control" type="text" name="username" placeholder="Username" value=""/>
         {% endif %}
-        <br />
-        Password: <input type="password" name="password" value="" size="50" />
-        <br />
+            <input class="form-control" type="password" placeholder="Password" name="password" value="">
 
-        <input type="submit" value="Submit" />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <a class="btn btn-lg btn-primary btn-block" href="/auth/register">Register</a>
+            <a class="btn btn-lg btn-primary btn-block" href="/auth/password/reset">Password reset</a>
     </form>
 
 {% endblock %}

@@ -1,26 +1,16 @@
 {% extends 'base.html' %}
 
+{% block navigation_block %}{% endblock %} <!-- empty -->
+
 {% block body_block %}
-    Hello. My name is Register.
-
-    <br>
-
-    <strong>Register here</strong>
-    <br>
-
-    <form id="user_form" method="post" action="/auth/register/">
-            <!-- enctype="multipart/form-data"> !!!!!!!!!!!!!!!!!!!!!!!-->
-
+    <form id="user_form" class="form-register" role="form" method="post" action="/auth/register/">
         {% csrf_token %}
+        <h2 class="form-register-heading">Register</h2>
 
-        <!-- Display each form. The as_p method wraps each element in a paragraph
-             (<p>) element. This ensures each element appears on a new line,
-             making everything look neater. -->
         {{ user_form.as_p }}
         {{ profile_form.as_p }}
 
-        <!-- Provide a button to click to submit the form. -->
-        <input type="submit" name="submit" value="Register" />
-    </form>  
 
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>  
 {% endblock %}

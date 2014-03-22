@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+    {% if user.is_authenticated %}
+        Hello, <b>{{ user.username }}</b>.
+    {% else %}
+        Hello.
+    {% endif %}
+
+    My name is View 1.
+    
+{% endblock %}

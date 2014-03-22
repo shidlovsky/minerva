@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.webkit.WebBackForwardList;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -69,6 +70,9 @@ public class MainActivity extends Activity {
 			switch (keyCode) {
 			case KeyEvent.KEYCODE_BACK:
 				if (webView.canGoBack()) {
+					WebBackForwardList history = webView.copyBackForwardList();
+					if(history.getItemAtIndex(history.getCurrentIndex() -1).getUrl().equals("about:blank"))
+						webView.goBack();
 					webView.goBack();
 				} else {
 					finish();

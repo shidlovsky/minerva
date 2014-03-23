@@ -2,56 +2,52 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<title>{% block title %}Glasgow Weekly Challenge{% endblock %}</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
-		<link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+<head>
+    <title>{% block title %}Glasgow Weekly Challenge{% endblock %}</title>
 
-		<link href="{% static 'css/styles.css' %}" rel="stylesheet">
-		
-		<script type="text/javascript" src="{% static 'js/jquery-2.1.0.js' %}"></script>
-		<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-	</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<body>
-		<div class="container">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
 
-			{% block navigation_block %}
-                {% include 'navigation.html' %}
-			{% endblock %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 
-			{% block body_block %}Body block{% endblock %}
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.0.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
 
+<body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=514505522003966";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">
 
-			Here are some links:
-			<h3>App</h3>
-			<ul>
-				<li><a href="/">Index page</a></li>
-				<li><a href="/info/">Info mockup</a></li>
-			</ul>
+    {% block navigation_block %}
+        {% include 'navigation.html' %}
+    {% endblock %}
 
-			<h3>API</h3>
-			<ul>
-				<li><a href="/api/classes">Classes</a></li>
-				<li><a href="/api/types/Bulb">Types. Usage: /types/_class_</a></li>
-				<li><a href="/api/usage">Your usage</a></li>
-			</ul>
+    {% block body_block %}Body block{% endblock %}
 
-			<h3>Authentication</h3>
-			<ul>
-				<li><a href="/auth/login">Login page</a></li>
-				<li><a href="/auth/register">Register page</a></li>
-				<li><a href="/auth/logout">Logout page</a></li>
-				<li><a href="/auth/password/reset">Forgot page</a></li>
-			</ul>
+    Here are some links:
 
-			<h3>Administration</h3>
-			<ul>
-				<li><a href="/admin">Admin page</a></li>
-			</ul>
-		</div>
-	</body>
+    <h3>Authentication</h3>
+    <ul>
+        <li><a href="/auth/login">Login page</a></li>
+        <li><a href="/auth/register">Register page</a></li>
+        <li><a href="/auth/logout">Logout page</a></li>
+        <li><a href="/auth/password/reset">Forgot page</a></li>
+    </ul>
+
+    <h3>Administration</h3>
+    <ul>
+        <li><a href="/admin">Admin page</a></li>
+    </ul>
+</div>
+</body>
 </html>

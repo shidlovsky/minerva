@@ -2,7 +2,6 @@
 
 {% load apptags %}
 
-{% block navigation_block %}{% endblock %} <!-- empty -->
 
 {% block body_block %}
     <form id="user_form" class="form-register" role="form" method="post" action="/auth/register/">
@@ -10,15 +9,15 @@
         <h2 class="form-register-heading">Register</h2>
 
         <div>
-        {{ user_form.username|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Username\"}"}}
+        {{ user_form.username|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Username\"}" }}
 		{{ user_form.errors.username }}
         </div>
         <div>
-        {{ user_form.email|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Email\", \"type\": \"email\"}"}}
+        {{ user_form.email|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Email\", \"type\": \"email\"}" }}
         {{ user_form.errors.email }}
         </div>
         <div>
-        {{ user_form.password|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Password\"}"}}
+        {{ user_form.password|addattributes:"{\"class\": \"form-control\", \"placeholder\": \"Password\"}" }}
         {{ user_form.errors.password }}
 		</div>
 
@@ -26,5 +25,12 @@
 
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-    </form>  
+    </form>
+
+    <!--<div class=" btn-block row text-center">
+    <iframe src="https://www.facebook.com/plugins/registration?
+             client_id=514505522003966&
+             redirect_uri=http://elxnis.pythonanywhere.com">
+    </iframe>
+    </div>-->
 {% endblock %}

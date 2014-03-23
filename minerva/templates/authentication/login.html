@@ -1,7 +1,5 @@
 {% extends 'base.html' %}
 
-{% block navigation_block %}{% endblock %} <!-- empty -->
-
 {% block body_block %}
     <form id="login_form" class="form-signin" role="form" method="post" action="/auth/login/">
         {% csrf_token %}
@@ -18,5 +16,6 @@
             <a class="btn btn-lg btn-primary btn-block" href="/auth/register">Register</a>
             <a class="btn btn-lg btn-primary btn-block" href="/auth/password/reset">Password reset</a>
     </form>
+    <div class="fb-login-button btn-block row text-center" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
 
 {% endblock %}

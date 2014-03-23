@@ -27,3 +27,11 @@ def user(request, username):
 def challenge(request, challenge_id):
 	context = RequestContext(request)
 	return render_to_response('challenge.html', {}, context)
+
+def login(request):
+	context = RequestContext(request)
+	return render_to_response('index.html', {}, context)
+
+def register(request):
+	context = RequestContext(request)
+	return render_to_response('index.html', {}, context)

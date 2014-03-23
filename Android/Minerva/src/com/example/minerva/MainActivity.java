@@ -12,7 +12,6 @@ import android.view.KeyEvent;
 import android.webkit.WebBackForwardList;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.webkit.WebSettings.ZoomDensity;
 
 public class MainActivity extends Activity {
 
@@ -28,7 +27,9 @@ public class MainActivity extends Activity {
 		webView = (WebView) findViewById(R.id.webView1);
 		webView.setWebViewClient(new MyWebViewClient());
 		webView.getSettings().setJavaScriptEnabled(true);
-
+		webView.getSettings().setSupportZoom(true) ; 
+		webView.getSettings().setUseWideViewPort(true) ; 
+		webView.setInitialScale(1) ;
 		builder = new Builder(this);
 		builder.setTitle("Internet coonection");
 		builder.setMessage("Please connect to the internet");

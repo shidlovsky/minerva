@@ -10,8 +10,9 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^auth/', include('authentication.urls')),
+    url(r'', include('gwc.urls')),
 
-    url(r'^$', 'app.views.index', name='index'),
+    #url(r'^$', 'gwc.views.index', name='index'),
     url(r'^info/$', 'app.views.info', name='info'),
     url(r'^view2/$', 'app.views.view2', name='view2'),
     url(r'^view3/$', 'app.views.view3', name='view3'),

@@ -87,6 +87,9 @@ body > header h1 {
 	line-height: 1.4em;
     margin-right: 10px;
 }
+#desc article:not(#stats) p {
+    margin-bottom: 10px;
+}
 #stats {
 }
 #stats strong {
@@ -103,8 +106,11 @@ body > header h1 {
 	margin-right: 0.1em;
 }
 
-#social h1 {
+#social h1, #social h2 {
 	text-align: center;
+}
+#social h2 {
+    font-size: 1.3em;
 }
 div.fb-comments {
 	margin: 0 auto;

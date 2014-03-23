@@ -10,3 +10,20 @@ import json
 def index(request):
 	context = RequestContext(request)
 	return render_to_response('index.html', {}, context)
+
+@login_required
+def profile(request):
+	context = RequestContext(request)
+	return render_to_response('profile.html', {}, context)
+
+def archive(request):
+	context = RequestContext(request)
+	return render_to_response('archive.html', {}, context)
+
+def user(request, username):
+	context = RequestContext(request)
+	return render_to_response('user.html', {}, context)
+
+def challenge(request, challenge_id):
+	context = RequestContext(request)
+	return render_to_response('challenge.html', {}, context)

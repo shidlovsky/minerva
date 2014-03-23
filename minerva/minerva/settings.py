@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'authentication',
     'app',
+    'gwc',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -103,3 +104,8 @@ LOGIN_URL = '/auth/login/'
 # EMAIL_HOST_PASSWORD = ''
 # EMAIL_USE_TLS = False
 # DEFAULT_FROM_EMAIL = 'testing@example.com'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+)

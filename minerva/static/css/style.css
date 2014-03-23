@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	font: 100%;
+	font-family: 'PT Sans Narrow', 'Open Sans Condensed', Frutiger, Verdana, sans-serif;
+}
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+
+body > nav {
+	position: fixed;
+	z-index: 1000;
+	top: 0; left: 0; right: 0;
+	height: 50px;
+	background-color: #222233;
+	color: white;
+	padding-top: 20px;
+	padding-left: 50px;
+	font-size: 25px;
+}
+nav + * {
+	padding-top: 80px;
+}
+
+nav aside {
+	float: right;
+	margin-right: 50px;
+	cursor: pointer;
+}
+nav aside:hover { text-decoration: underline; }
+
+nav span {
+	width: 32px;
+	height: 32px;
+	background-image: url(/static/images/unticked.png);
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: bottom;
+	cursor: pointer;
+}
+nav span.ticked {
+	background-image: url(/static/images/ticked.png);
+}
+
+body > header h1 {
+	text-align: center;
+}
+
+#challenge {
+	background-image: url(/static/images/bg.jpg);
+	background-size: cover;
+	height: 500px;
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	text-shadow: 0 0 10px #333;
+}
+#challenge > * {
+	text-align: center;
+}
+#challenge header {
+	margin-top: 0px;
+}
+#task {
+	font-size: 2.5em;
+}
+
+#desc {
+	text-align: center;	
+	padding: 20px 0;
+}
+#desc article {
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 1.4em;
+}
+#stats {
+}
+#stats strong {
+}
+#stats img {
+	margin-right: 5px;
+}
+#stats div {
+	height: 10px;
+}
+
+#desc article header, #desc article header h1 {
+	display: inline;
+	margin-right: 0.1em;
+}
+
+#social h1 {
+	text-align: center;
+}
+div.fb-comments {
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+	width: 600px;
+}
